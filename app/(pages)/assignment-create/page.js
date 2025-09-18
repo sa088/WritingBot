@@ -1,7 +1,7 @@
 "use client";
 import { useRouter } from "next/navigation";
 import AssignmentForm from "@/components/forms/AssignmentForm/AssignmentForm";
-import AuthLayout from "@/components/layouts/AuthLayout/AuthLayout";
+import TwoSideLayout from "@/components/layouts/TwoSideLayout/TwoSideLayout";
 
 export default function AssignmentCreatePage() {
     const router = useRouter();
@@ -13,8 +13,8 @@ export default function AssignmentCreatePage() {
     };
 
     return (
-        <AuthLayout showRobot={true}>
+        <TwoSideLayout showRobot={true}>
             <AssignmentForm onSubmit={handleSubmit} />
-        </AuthLayout>
+        </TwoSideLayout>
     );
 }

@@ -1,6 +1,6 @@
 "use client";
 import SimpleLayout from "@/components/layouts/SimpleLayout/SimpleLayout";
-import Button from "@/components/ui/Button/Button";
+import Button from "@/components/common/Button/Button";
 import Image from "next/image";
 
 export default function SuccessPage() {

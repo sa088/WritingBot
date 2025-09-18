@@ -1,8 +1,8 @@
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-import Button from "../../ui/Button/Button";
-import Input from "../../ui/Input/Input";
+import Button from "../../common/Button/Button";
+import Input from "../../common/Input/Input";
 
 const validationSchema = yup.object().shape({
     email: yup

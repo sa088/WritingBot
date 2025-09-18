@@ -2,12 +2,9 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --foreground: #1E1C28;
+  --color-background: #ffffff;
+  --color-foreground: #1E1C28;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-montserrat: var(--font-montserrat);
@@ -17,6 +14,8 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --color-background: #0a0a0a;
+    --color-foreground: #ededed;
   }
 }
 

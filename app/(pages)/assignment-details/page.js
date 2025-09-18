@@ -3,10 +3,10 @@ import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-import AuthLayout from "@/components/layouts/AuthLayout/AuthLayout";
-import Button from "@/components/ui/Button/Button";
-import FileUpload from "@/components/ui/FileUpload/FileUpload";
-import Input from "@/components/ui/Input/Input";
+import TwoSideLayout from "@/components/layouts/TwoSideLayout/TwoSideLayout";
+import Button from "@/components/common/Button/Button";
+import FileUpload from "@/components/common/FileUpload/FileUpload";
+import Input from "@/components/common/Input/Input";
 
 const validationSchema = yup.object().shape({
     ragSessionId: yup
@@ -50,7 +50,7 @@ export default function AssignmentDetails() {
     };
 
     return (
-        <AuthLayout
+        <TwoSideLayout
             title="Assignment details"
             description="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit."
         >
@@ -78,6 +78,6 @@ export default function AssignmentDetails() {
                     Submit
                 </Button>
             </form>
-        </AuthLayout>
+        </TwoSideLayout>
     );
 }

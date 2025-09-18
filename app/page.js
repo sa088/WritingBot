@@ -1,6 +1,6 @@
 "use client";
 import { useRouter } from "next/navigation";
-import AuthLayout from "../components/layouts/AuthLayout/AuthLayout";
+import TwoSideLayout from "../components/layouts/TwoSideLayout/TwoSideLayout";
 import LoginForm from "../components/forms/LoginForm/LoginForm";
 
 export default function LoginPage() {
@@ -21,11 +21,11 @@ export default function LoginPage() {
   };
 
   return (
-    <AuthLayout
+    <TwoSideLayout
       title="Login"
       description="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit."
     >
       <LoginForm onSubmit={handleLogin} />
-    </AuthLayout>
+    </TwoSideLayout>
   );
 }
