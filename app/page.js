@@ -13,7 +13,7 @@ export default function LoginPage() {
 
       // Simulate API call
       setTimeout(() => {
-        router.push("/assignment-details");
+        router.push("/dashboard");
       }, 1000);
     } catch (error) {
       console.error("Login error:", error);

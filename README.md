@@ -73,7 +73,8 @@ Here's an overview of the project structure:
 ├── components/
 │   ├── common/         # Common components (Button, Input, FileUpload)
 │   ├── forms/          # Form components (LoginForm, AssignmentForm)
-│   └── layouts/        # Layout components (TwoSideLayout, SimpleLayout)
+│   ├── layouts/        # Layout components (TwoSideLayout, SimpleLayout)
+│   └── tables/         # Table components (History Data Table)
 ├── public/             # Static assets (images, favicon)
 ├── package.json        # Project metadata and scripts
 ├── postcss.config.mjs  # PostCSS config (Tailwind)

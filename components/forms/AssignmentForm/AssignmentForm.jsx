@@ -3,6 +3,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import Button from "../../common/Button/Button";
 import Input from "../../common/Input/Input";
+import Textarea from "../../common/Textarea/Textarea";
 import FileUpload from "../../common/FileUpload/FileUpload";
 
 const validationSchema = yup.object().shape({
@@ -26,12 +27,8 @@ const validationSchema = yup.object().shape({
         .string()
         .required("Additional instructions are required")
         .min(5, "Additional instructions must be at least 5 characters long"),
-    wordCountTarget: yup
-        .string()
-        .required("Word count target is required"),
-    assignmentType: yup
-        .string()
-        .required("Assignment type is required"),
+    wordCountTarget: yup.string().required("Word count target is required"),
+    assignmentType: yup.string().required("Assignment type is required"),
     qualityTarget: yup
         .string()
         .required("Quality target is required")
@@ -100,12 +97,12 @@ const AssignmentForm = ({ onSubmit, loading = false }) => {
                 className="text-xs md:text-sm"
             />
 
-            <Input
+            <Textarea
                 label="Additional instructions"
-                type="text"
                 id="additionalInstructions"
                 name="additionalInstructions"
                 placeholder="Write Additional Instructions"
+                rows={5}
                 {...register("additionalInstructions")}
                 error={errors.additionalInstructions?.message}
                 className="text-xs md:text-sm"

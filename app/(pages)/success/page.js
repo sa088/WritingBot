@@ -11,7 +11,7 @@ export default function SuccessPage() {
 
     return (
         <SimpleLayout>
-            <div className="flex flex-col items-center justify-between gap-2 text-center">
+            <div className="flex flex-col items-center justify-between gap-2 text-center max-w-md mx-auto ">
                 <div className="relative max-w-[150px] w-[120px] sm:w-full h-auto aspect-square">
                     <Image
                         src="/successCheck.png"

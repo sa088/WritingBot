@@ -8,7 +8,7 @@ const SimpleLayout = ({ children, title }) => {
                 </h1>
 
                 {/* Main Content */}
-                <div className="max-w-md mx-auto w-full">
+                <div className="w-full px-0 md:px-8">
                     {title && (
                         <h2 className="text-[20px] md:text-[24px] lg:text-[28px] text-center font-bold mb-8">
                             {title}
